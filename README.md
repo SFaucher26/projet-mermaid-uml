@@ -41,7 +41,7 @@ title: Bank example
 ---
 classDiagram
     class BankAccount
-    <<Abstract>>
+    <<abstract>> BankAccount
     BankAccount : +String owner
     BankAccount : +Bigdecimal balance
     BankAccount : +deposit(amount)
