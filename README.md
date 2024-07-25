@@ -11,6 +11,7 @@ classDiagram
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
     Animal <|-- Fish
     Animal <|-- Zebra
+    Animal <|-- Cat
     Animal : +int age
     Animal : +String gender
     Animal: +isMammal()
@@ -27,6 +28,10 @@ classDiagram
     class Zebra{
         +bool is_wild
         +run()
+    }
+    class Cat{
+        -String name
+        +eat()
     }
 
 ```
