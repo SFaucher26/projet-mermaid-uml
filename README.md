@@ -35,3 +35,15 @@ classDiagram
     }
 
 ```
+```mermaid
+---
+title: Bank example
+---
+classDiagram
+    class BankAccount
+    <<Abstract>>
+    BankAccount : +String owner
+    BankAccount : +Bigdecimal balance
+    BankAccount : +deposit(amount)
+    BankAccount : +withdrawal(amount)
+```
