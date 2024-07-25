@@ -12,6 +12,9 @@ classDiagram
     Animal <|-- Fish
     Animal <|-- Zebra
     Animal <|-- Cat
+    classDiagram
+    class Animal
+    <<Abstract>>
     Animal : +int age
     Animal : +String gender
     Animal: +isMammal()
