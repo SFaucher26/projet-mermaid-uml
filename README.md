@@ -6,7 +6,6 @@
 title: Animal example
 ---
 classDiagram
-<<Abstract>>
     note "From Duck till Zebra"
     Animal <|-- Duck
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
