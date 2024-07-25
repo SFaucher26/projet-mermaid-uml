@@ -37,13 +37,43 @@ classDiagram
 ```
 ```mermaid
 ---
-title: Bank example
+title: Bibliotheque
 ---
 classDiagram
-    class BankAccount
-    <<abstract>> BankAccount
-    BankAccount : +String owner
-    BankAccount : +Bigdecimal balance
-    BankAccount : +deposit(amount)
-    BankAccount : +withdrawal(amount)
+    User --|>Employe
+    User --|>Adhérent
+    Support --|>Livre
+    Support --|>Disque
+    Support <|-- User
+    class User
+    <<abstract>> User
+    User : +String firstname
+    User : +String lastname
+    User : +int numero
+    User : +list emprunts
+    User : +emprunter()
+    User : +rendre()
+    class Employe{
+        +date dateEmbauche
+        +String avantages
+        
+    }
+    class Adhérent{
+        +date inscription
+        +String avantagesFidelité
+    }
+    class Support
+    <<abstract>> Support
+    Support : + String name
+    Support : + date creation
+    class Livre{
+        + String auteur
+        + int nombrePages
+    }
+    class Disque{
+        + String realisateur
+
+    }
+
+    
 ```
